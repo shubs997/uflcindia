@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UFLC | HOME</title>
+    <link rel="stylesheet" href="styles/main.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.svg" alt="uflc-logo" class="logo">
+    
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="#">Our Stories</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section>
+            <div class="landing">
+                <div class="illustration">
+                    <img src="images/illustration.svg" alt="graphic" class="server">
+                </div>  
+                <div class="title">
+                    <h1>Working together for a social cause.</h1>
+                    <p class="subhead">We are a non-profit organization working to  address current and future socio-environmental issues. </p>
+                </div>  
+            </div>
+        </section>
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <h1>Our Causes</h1>
+            <ul>
+                <li class="card-1">
+                    <img src="images/hand.svg" alt="logo-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, facere!</p>
+                </li>
+                <li class="card-2">
+                    <img src="images/charity.svg" alt="logo-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, facere!</p>
+                </li>
+                <li class="card-3">
+                    <img src="images/hand2.svg" alt="logo-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, facere!</p>
+                </li>
+                <li class="card-4">
+                    <img src="images/globe.svg" alt="logo-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, facere!</p>
+                </li>
+                <li class="card-5">
+                    <img src="images/fist.svg" alt="logo-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, facere!</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <div>
+        <div>
+            <img src="images/photo.jpg" alt="photo-1" class="hero-section">
+        </div>
+    </div> -->
+    <div class="image-container">
+        <div class="container">
+            <h2>We can't help everyone but everyone can help someone.</h2>
+            <a href="getinvolved.html" class="cta">Get Involved</a>
+        </div>
+    </div>
+
+    <div class="work-container">
+        <div class="container">
+            <h2>Featured Work</h2>
+            <ul>
+                <li>
+                    <img src="images/work1.jpg" alt="fearutes-1">
+                    <div class="heading">
+                        <h6>River Cleanliness Drive</h6>
+                        <!-- <a href="getinvolved.html" class="cta2">Get Involved</a> -->
+                    </div>
+                </li>
+                <li>
+                    <img src="images/work1.jpg" alt="fearutes-1">
+                    <div class="heading">
+                        <h6>Discussion on CAA and NRC</h6>
+                        <!-- <a href="getinvolved.html" class="cta2">Get Involved</a> -->
+                    </div>
+                </li>
+                <li>
+                    <img src="images/work1.jpg" alt="fearutes-1">
+                    <div class="heading">
+                        <h6>Tree Plantation</h6>
+                        <!-- <a href="getinvolved.html" class="cta2">Get Involved</a> -->
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <h3>United Front of Liberal Community</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+</body>
+</html>
