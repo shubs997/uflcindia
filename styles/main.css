@@ -156,7 +156,7 @@ h2 {
     width: 20px;
     color: #fff;
     border-radius: 20px;
-    padding: .5em;
+    padding: 0.5em 1.5em;
     text-decoration: none;
     font-size: 1.5em;
     margin: 3% auto 7%;
@@ -316,7 +316,7 @@ nav ul li a:hover {
         margin-bottom: 12%;
     }
     .work-container .heading {
-        display: flex;
+        display: flex; 
         padding: 20px;
     }
     
@@ -344,7 +344,7 @@ nav ul li a:hover {
     }
 
     .blue-container img {
-        width: 20%;
+        width: 65%;
     }
 
     .blue-container ul li:nth-child(3) img {
