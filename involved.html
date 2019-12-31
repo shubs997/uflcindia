@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="UFLC pune,uflc india,UFLC,NGO,ngo,non-profit,river" />
+    <meta name="description" content="ngo in pune">
+    <meta name="author" content="Shubham Jadhav">
+    <title>UFLC | HOME</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/involved.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img src="images/logo2.png" alt="uflc-logo" class="logo"></a>
+    
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="work.html">Our Work</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="">Get Involved</a></li>
+                    <li><a href="#">Our Stories</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+
+    </div>
+
+    <div class="form-container">
+        <div class="container">
+            <h1>Become A Volunteer</h1>
+
+
+            <!-- <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"></form>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                          <input type="text" id="fnameField" name="entry.2117396799" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                          <input type="text" id="lnameField" name="entry.54311155" class="form-control" placeholder="Last name">
+                        </div>
+                      </div>
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" id="emailField" name="entry.1556626401" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <input type="number" id="mobField" name="entry.620087881" class="form-control" id="exampleInputPassword1" placeholder="Mobile Number (For whatsapp group)">
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                      <input type="number" id="age" name="entry.1174182124" class="form-control" placeholder="Age">
+                    </div>
+                    <div class="col">
+                      <input type="text" id="pro" name="entry.1390093379" class="form-control" placeholder="Profession">
+                    </div>
+                  </div><br><br>
+                  <button id="send" type="submit" class="btn btn-outline-info">Submit</button>
+            </form> -->
+
+            <form id="form" onsubmit="return postToGoogle();" action=""> 
+                <input id="fnameField" name="entry.2117396799" placeholder="Enter your first name" type="text" required><br><br>
+                <input id="lnameField" name="entry.54311155" placeholder="Enter your last name" type="text" required><br><br>
+                <input id="emailField" name="entry.1556626401" placeholder="Enter your email" type="email" required><br><br>
+                <input id="mobField" name="entry.620087881" placeholder="Enter Phone Number" type="text" pattern="^\d{10}$" required><br><br> 
+                <input id="age" name="entry.1174182124" placeholder="Enter your age" type="text" required><br><br>
+                <input id="pro" name="entry.1390093379" placeholder="Enter your profession" type="text" required><br><br>
+                
+                <button id="send" type="submit" class="btn btn-outline-info">Register Now</button>
+            </form>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <h3>United Front of Liberal Community</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+<script>
+    function postToGoogle() {
+                    var field1 = $("#fnameField").val();
+                    var field2 = $("#lnameField").val();
+                    var field3 = $("#emailField").val();
+                    var field4 = $("#mobField").val();
+                    var field5 = $("#age").val();
+                             var field6 = $("#pro").val();
+    
+                    if(field1 == ""){
+                        alert('Please Fill Your Name');
+                        document.getElementById("nameField").focus();
+                        return false;
+                    }
+                    if(field2 == ""){
+                        alert('Please Fill Your Email');
+                        document.getElementById("emailField").focus();
+                        return false;
+                    }
+                    if(field4 == "" || field4.length > 10 || field4.length < 10){
+                        alert('Please Fill Your Mobile Number');
+                        document.getElementById("mobField").focus();
+                        return false;
+                    }
+    
+    
+                    
+        
+                    $.ajax({
+                        url: "https://docs.google.com/forms/d/e/1FAIpQLSeSXbiXuhBxD67L4KRjtvQh8MbZ0Hixwhpa7iugFbowyTN83Q/formResponse?",
+                        data: {"entry.2117396799": field1, "entry.54311155": field2, "entry.1556626401": field3, "entry.620087881": field4, "entry.1174182124": field5, "entry.1390093379":field6},
+                        type: "POST",
+                        dataType: "xml",
+                        success: function(d)
+                        {
+                        },
+                        error: function(x, y, z)
+                            {
+                                alert('data submitted successfully!')                               
+                            }
+                    });
+                    return false;
+                }
+    </script>
+    
+
+<!-- <script src="js/app.js"></script> -->
+</body>
+</html>
