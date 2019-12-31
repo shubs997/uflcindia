@@ -55,6 +55,17 @@ h1, .subhead {
 
 .para {
     font-size: 1em;
+    text-align: left;
+}
+.para2 {
+    font-size: 1em;
+    text-align: left;
+}
+.para2:first-child {
+    padding-top: 10%;
+}
+.para2:last-child {
+    padding-bottom: 10%;
 }
 
 .hero-section {
@@ -384,7 +395,6 @@ nav ul li a:hover {
     
     .server {
         width: 140%;
-        margin: 0em 0 4em 11%;
         display: inline-block;
     }
     .illustration {
