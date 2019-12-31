@@ -389,6 +389,8 @@ nav ul li a:hover {
     }
     .title{
         margin: 150px auto 0px;
+        border: 2px solid grey;
+        flex: 2;
     }
     .landing{
         display: flex;
