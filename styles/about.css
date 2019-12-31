@@ -38,8 +38,23 @@ header {
     width: 25px;
     margin-top: 45%;
 }
-
+.check{
+    justify-content: center;
+    display: flex;
+}
+.one {
+    flex:;
+}
+.check > div{
+    padding: 20%;
+    background-color: purple;
+    border: 5px solid black;
+}
 .server {
+    width: 100%;
+}
+
+.server2 {
     width: 100%;
     margin: 2em auto 2em;
 }
@@ -54,6 +69,7 @@ h1, .subhead {
 }
 
 .para {
+    margin-top: 5%;
     font-size: 1em;
     text-align: left;
 }
@@ -220,6 +236,7 @@ h2 {
     padding: 3em 0;
     border-top-right-radius: 40px;
     transform: skewY(2deg);
+    margin-top: 10%;
 }
 
 .footer-container .container {
@@ -318,6 +335,10 @@ nav ul li a:hover {
         order: 1;
     }
 
+    .illustration2 {
+        order: 1;
+    }
+
     h1 {
         font-size: 3em;
         margin: 0;
@@ -397,19 +418,26 @@ nav ul li a:hover {
         width: 140%;
         display: inline-block;
     }
+    .server2 {
+        width: 100%;
+        display: inline-block;
+    }
     .illustration {
+        border-radius: 5px; 
+    }
+    .illustration2{
         border-radius: 5px; 
     }
 
     .title{
         text-align: left;
-        margin: 150px auto 0px;
         flex-grow: 4;
     }
 
     .landing{
         display: flex;
         flex: 3;
+        margin-top: 10%;
     }
     h1 {
         font-size: 1.8em;
