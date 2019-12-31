@@ -128,7 +128,7 @@ h1, .subhead {
 }
 
 .blue-container ul li:nth-child(3) img {
-    width: 8%;
+    width: 14%;
 }
 
 .gray-container {
@@ -202,6 +202,10 @@ h2 {
     font-size: 40px;
 }
 
+footer {
+    
+}
+
 .footer-container {
     width: 100%;
     background: #3D444A;
@@ -244,6 +248,7 @@ ul.footer-links {
 
 ul.footer-links li {
     display: inline-block;
+    padding: 10px;
 }
 
 ul.footer-links li a {
@@ -339,6 +344,8 @@ nav ul li a:hover {
     .work-container ul li img {
         border-radius: 10px 10px 0px 0px ;
         padding: 5px;
+        max-width: 360px;
+        max-height: 270px;
     }
     .work-container ul li a {
         float: right;
@@ -407,6 +414,20 @@ nav ul li a:hover {
         margin: 0 0 4% 0;
     }
 
+    .blue-container ul li {
+        margin-bottom: 3em;
+        background-color: #fff;
+        border-radius: 42px;
+        padding: 50px;
+        min-height: 170px;
+        max-width: 100px;
+        margin: 60px 10px 80px 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .blue-container ul li:hover {
+        top: -10;
+    }
     .gray-container ul {
         margin: 4% 0 0;
     }
@@ -513,5 +534,7 @@ nav ul li a:hover {
         width: 8%;
         margin-top: -4px;
     }
+
+
 
 }

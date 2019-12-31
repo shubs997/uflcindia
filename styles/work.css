@@ -273,6 +273,7 @@ ul.footer-links {
 
 ul.footer-links li {
     display: inline-block;
+    padding: 10px;
 }
 
 ul.footer-links li a {
