@@ -202,8 +202,10 @@ h2 {
     font-size: 40px;
 }
 
-footer {
-
+.work-container ul li img {
+    border-radius: 10px 10px 0px 0px ;
+    padding: 5px;
+    width: 100%;
 }
 
 .footer-container {
@@ -347,8 +349,7 @@ nav ul li a:hover {
     .work-container ul li img {
         border-radius: 10px 10px 0px 0px ;
         padding: 5px;
-        max-width: 360px;
-        max-height: 270px;
+        width: 100%;
     }
     .work-container ul li a {
         float: right;

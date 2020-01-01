@@ -230,6 +230,12 @@ h2 {
     font-size: 40px;
 }
 
+.work-container ul li img {
+    border-radius: 10px 10px 0px 0px ;
+    padding: 5px;
+    width: 100%;
+}
+
 .footer-container {
     width: 100%;
     background: #3D444A;
@@ -378,6 +384,7 @@ nav ul li a:hover {
     .work-container ul li img {
         border-radius: 10px 10px 0px 0px ;
         padding: 5px;
+        width: 100%;
     }
     .work-container ul li img:hover {
         transform: scale(1.1);
