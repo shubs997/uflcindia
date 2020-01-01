@@ -230,6 +230,7 @@ h2 {
     font-size: 40px;
 }
 
+
 .work-container ul li img {
     border-radius: 10px 10px 0px 0px ;
     padding: 5px;
@@ -362,7 +363,7 @@ nav ul li a:hover {
     .work-container .heading {
         display: flex; 
         padding: 20px;
-        justify-content: ;
+        /* justify-content: ; */
     }
     
     .work-container ul{
@@ -518,7 +519,7 @@ nav ul li a:hover {
     nav ul li a {
         color: black;
         background-color: inherit;
-        text-align: right;
+        /* text-align: right; */
         padding: 1em 2em;
         font-weight: bold;
     }

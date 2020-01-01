@@ -11,7 +11,6 @@ p, blockquote {
     line-height: 1.6em;
 }
 
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -115,6 +114,8 @@ h1, .subhead {
     background-color: #fff;
     border-radius: 42px;
     padding: 50px;
+    min-height: 170px;
+    max-width: 100px;
     margin: 60px 10px 80px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -129,7 +130,7 @@ h1, .subhead {
 }
 
 .blue-container ul li:nth-child(3) img {
-    width: 14%;
+    width: 8%;
 }
 
 .gray-container {
@@ -160,13 +161,22 @@ h2 {
     background: #00CC80;
     width: 20px;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 0.5em 1.5em;
     text-decoration: none;
     font-size: 1.5em;
     margin: 3% auto 7%;
+    border: 2px solid #00CC80;
     position: relative;
     z-index: 4;
+    transition: all  0.4s ease;
+    
+}
+
+.cta:hover {
+    color: #00CC80;
+    background-color: transparent;
+    border: 2px solid #00CC80;
 }
 
 .cta2{
@@ -206,7 +216,7 @@ h2 {
 .work-container ul li img {
     border-radius: 10px 10px 0px 0px ;
     padding: 5px;
-    width: 100%;
+    width: 97%;
 }
 
 .footer-container {
@@ -277,10 +287,10 @@ nav ul li a {
     display: block;
     width: 100%;
     padding: 1em 2em;
-    background-color: #00A6D1;
+    background-color: #00A6D1;;
 }
 
-nav ul li a:hover {
+nav ul li a:hover{
     background-color: rgb(54, 178, 255);
     text-decoration: none;
 }
@@ -345,13 +355,10 @@ nav ul li a:hover {
         box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.1);
     }
 
-    .work-container ul li::before {
-        background: linear-gradient(rgba(0, 0, 250, 0.25), rgba(125, 250, 250, 0.45));
-    }
     .work-container ul li img {
         border-radius: 10px 10px 0px 0px ;
         padding: 5px;
-        width: 100%;
+        width: 97%;
     }
     .work-container ul li a {
         float: right;
@@ -425,15 +432,15 @@ nav ul li a:hover {
         background-color: #fff;
         border-radius: 42px;
         padding: 50px;
-        min-height: 170px;
+        min-height: 189px;
         max-width: 100px;
         margin: 60px 10px 80px 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
     .blue-container ul li:hover {
         top: -10;
     }
+
     .gray-container ul {
         margin: 4% 0 0;
     }
@@ -480,9 +487,9 @@ nav ul li a:hover {
     nav ul li a {
         color: black;
         background-color: inherit;
-        /* text-align: right;
+        /* text-align: right; */
         padding: 1em 2em;
-        font-weight: bold; */
+        font-weight: bold;
     }
 
     nav ul li a:hover {
@@ -540,7 +547,5 @@ nav ul li a:hover {
         width: 8%;
         margin-top: -4px;
     }
-
-
 
 }
