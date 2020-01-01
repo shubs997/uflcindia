@@ -109,6 +109,14 @@ h1, .subhead {
     transform: skewY(2deg);
 }
 
+.blue-container ul li {
+    margin-bottom: 3em;
+    background-color: #fff;
+    border-radius: 42px;
+    padding: 50px;
+    margin: 60px 10px 80px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .blue-container ul li p {
     padding: 0 .5em;
