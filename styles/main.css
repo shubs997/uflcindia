@@ -11,6 +11,7 @@ p, blockquote {
     line-height: 1.6em;
 }
 
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -202,8 +203,10 @@ h2 {
     font-size: 40px;
 }
 
-footer {
-
+.work-container ul li img {
+    border-radius: 10px 10px 0px 0px ;
+    padding: 5px;
+    width: 100%;
 }
 
 .footer-container {
@@ -274,11 +277,12 @@ nav ul li a {
     display: block;
     width: 100%;
     padding: 1em 2em;
-    background-color: rgb(49, 55, 59);
+    background-color: #00A6D1;
 }
 
 nav ul li a:hover {
-    background-color: rgb(65, 73, 78);
+    background-color: rgb(54, 178, 255);
+    text-decoration: none;
 }
 
 .exit-btn {
@@ -347,8 +351,7 @@ nav ul li a:hover {
     .work-container ul li img {
         border-radius: 10px 10px 0px 0px ;
         padding: 5px;
-        max-width: 360px;
-        max-height: 270px;
+        width: 100%;
     }
     .work-container ul li a {
         float: right;
@@ -477,9 +480,9 @@ nav ul li a:hover {
     nav ul li a {
         color: black;
         background-color: inherit;
-        text-align: right;
+        /* text-align: right;
         padding: 1em 2em;
-        font-weight: bold;
+        font-weight: bold; */
     }
 
     nav ul li a:hover {

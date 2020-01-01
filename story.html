@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="UFLC pune,uflc india,UFLC,NGO,ngo,non-profit,river" />
+    <meta name="description" content="ngo in pune">
+    <meta name="author" content="Shubham Jadhav">
+    <title>UFLC | HOME</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/work.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><img src="images/logo2.png" alt="uflc-logo" class="logo"></a>
+    
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="work.html">Our Work</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="involved.html">Get Involved</a></li>
+                    <li><a href="#">Our Stories</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </div>
+
+    <div class="story-container">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li style="display: flex; flex-direction: row;">
+                        <img src="images/launch.png" alt="features-1" width="30%" height="40%" style="padding-left: 20%;">
+                        <div class="heading"><br><br><br><br><br><br><br><br><br><br><br><br>
+                            <h1>Coming Soon...</h1>
+                        </div>
+                   </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <h3>United Front of Liberal Community</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+
+</body>
+</html>
