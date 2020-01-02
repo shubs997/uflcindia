@@ -35,6 +35,7 @@ header {
 }
 
 .menu {
+    transition: all .5s ease;
     width: 25px;
     margin-top: 45%;
 }
@@ -298,6 +299,7 @@ nav ul li a:hover{
     margin-top: -1.3em;
     text-align: right;
     padding: 0 1.4em;
+    transition: all 0.5s ease;
 }
 
 .exit-btn img {
@@ -423,6 +425,7 @@ nav ul li a:hover{
 
     .blue-container ul {
         margin: 0 0 4% 1%;
+        justify-content: center;
     }
 
     .blue-container ul li {
@@ -461,6 +464,7 @@ nav ul li a:hover{
     }
 
     .show-desktop {
+        transition: all 0.3s ease;
         display: block;
         margin: 0 auto 13% auto;
     }
@@ -523,6 +527,17 @@ nav ul li a:hover{
 
     .blue-container {
         padding: 7em 0 2em;
+    }
+
+    .blue-container ul li {
+        margin-bottom: 3em;
+        background-color: #fff;
+        border-radius: 42px;
+        padding: 50px;
+        min-height: 189px;
+        max-width: 100px;
+        margin: 60px 10px 80px 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .blue-container ul li p, blockquote {
