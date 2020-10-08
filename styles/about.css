@@ -27,7 +27,8 @@ ul {
 }
 
 .hide-mobile {
-    display: none;
+    /* display: none; */
+    right: -60vw;
 }
 header {
     display: flex;
@@ -290,6 +291,8 @@ nav ul {
     height: 100%;
     z-index: 7;
     padding-top: 3em;
+    right: 0vw;
+    transition: all .5s ease-in-out;
 }
 
 nav ul li a {
@@ -302,7 +305,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(65, 73, 78);
+    background-color: #00657e;
 }
 
 .exit-btn {
@@ -340,6 +343,12 @@ nav ul li a:hover {
         order: 1;
     }
 
+    .end {
+        transform: skewY(0deg);
+        padding-bottom: 28px;
+        background: linear-gradient(to bottom, transparent 0%, #3d444a 70%);
+    }
+    
     h1 {
         font-size: 3em;
         margin: 0;

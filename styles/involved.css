@@ -27,7 +27,8 @@ ul {
 }
 
 .hide-mobile {
-    display: none;
+    /* display: none;*/
+    right: -60vw;
 }
 header {
     display: flex;
@@ -51,6 +52,10 @@ header {
 .server2 {
     width: 100%;
     margin: 2em auto 2em;
+}
+
+#para1 {
+    padding: 1em 2em;
 }
 
 h1, .subhead {
@@ -257,6 +262,10 @@ h2 {
     z-index: -2;
 }
 
+.footer-container .container h3 {
+    font-size:1em;
+}
+
 .footer-container:after {
     content: "";
     width: 80px;
@@ -293,6 +302,8 @@ nav ul {
     height: 100%;
     z-index: 7;
     padding-top: 3em;
+    right: 0vw;
+    transition: all .5s ease-in-out;
 }
 
 nav ul li a {
@@ -305,7 +316,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(65, 73, 78);
+    background-color: #00657e;
+    color: #fff;
+    text-decoration: none;
 }
 
 .exit-btn {
@@ -339,6 +352,12 @@ nav ul li a:hover {
         order: 1;
     }
 
+    .end {
+        transform: skewY(0deg);
+        padding-bottom: 28px;
+        background: linear-gradient(to bottom, transparent 0%, #3d444a 70%);
+    }
+    
     .illustration2 {
         order: 1;
     }
@@ -540,11 +559,17 @@ nav ul li a:hover {
 
     nav ul li a:hover {
         background-color: inherit;
+        color: #00a6d1;
+        text-decoration: none;
     }
 
     .scroll {
         width: 30px;
         animation: move 1s infinite alternate;
+    }
+
+    #para1 {
+        padding-top: 2em;
     }
 
     @keyframes move {

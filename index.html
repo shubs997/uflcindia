@@ -18,12 +18,15 @@
     <meta name="description" content="uflc pune">
     <meta name="author" content="Shubham Jadhav">
     <title>UFLC | HOME | ngo in pune</title>
+    <!-- //AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="styles/main.css"> 
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="images/logo2.png" alt="uflc-logo" class="logo">
+            <img src="images/logo2.png" alt="uflc-logo" class="logo" data-aos="zoom-out" data-aos-delay="200">
     
             <nav>
                 <a href="#" class="hide-desktop">
@@ -42,19 +45,24 @@
     
         <section>
             <div class="landing">
-                <div class="illustration">
+                <div class="illustration" data-aos="zoom-in" data-aos-easing="ease" data-aos-delay="400">
                     <img src="images/illustration.svg" alt="graphic" class="server">
                 </div>  
                 <div class="title">
-                    <h1>Working together for a social cause.</h1>
-                    <p class="subhead">We are a non-profit organization based in pune, working to address current and future socio-environmental issues. </p>
+                    <img src="images/Group 5.svg" alt="graphic" class="bezier" data-aos="fade-right">
+                    <h1 data-aos="zoom-in">Working together for a social cause.</h1>
+                    <p class="subhead" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">We are a non-profit organization based in pune, working to address current and future socio-environmental issues. </p>
+                    <div class="social-icons" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+                        <a class="social-img" href="https://www.instagram.com/uflcindia/" target="_blank"><img src="images/instagram-uflc.png" alt="instagram"></a> 
+                        <a class="social-img-fb" href="https://www.facebook.com/pg/uflcindia/posts/" target="_blank"><img src="images/facebook-uflc.png" alt="facebook"></a>
+                    </div>
                 </div>  
             </div>
         </section>
     </div>
 
     <div class="blue-container">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
             <h1>Our Causes</h1>
             <ul>
                 <li class="card-1">
@@ -88,15 +96,15 @@
     </div> -->
     <div class="image-container">
         <div class="container">
-            <h2>Be the change you wish to see in the world.</h2>
-            <a href="involved.html" class="cta">Get Involved</a>
+            <h2 data-aos="fade-up" data-aos-delay="400">Be the change you wish to see in the world.</h2>
+            <a href="involved.html" class="cta" data-aos="zoom-in" data-aos-delay="800">Get Involved</a>
         </div>
     </div>
 
     <div class="work-container">
         <div class="container">
-            <h1>Featured Work</h1>
-            <ul>
+            <h1 data-aos="fade-up" data-aos-delay="400">Featured Work</h1>
+            <ul data-aos="fade-up" data-aos-delay="500">
                 <li>
                     <img src="images/work1.JPG" alt="features-1">
                     <div class="heading">
@@ -122,21 +130,24 @@
             </ul>
         </div>
     </div>
-
-    <footer>
-        <div class="footer-container">
-            <div class="container">
-                <h3>United Front of Liberal Community</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
+    
+    <div class="end">
+        <footer>
+            <div class="footer-container">
+                <div class="container">
+                    <h3 data-aos="fade-up" data-aos-delay="400">United Front of Liberal Community</h3>
+                    <ul class="footer-links" >
+                        <li><a href="#">Copyright @ 2020 All Rights Reserved.</a></li>
+                        <!-- <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li> -->
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script>
-    
+        AOS.init();
         var menu = document.getElementById('menu');
         var nav = document.getElementById('nav');
         var exit = document.getElementById('exit');

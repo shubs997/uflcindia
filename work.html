@@ -18,6 +18,9 @@
     <meta name="description" content="ngo in pune">
     <meta name="author" content="Shubham Jadhav">
     <title>UFLC | OUR WORK</title>
+    <!-- //AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles/work.css"> 
 </head>
@@ -32,7 +35,7 @@
                 </a>
                 <ul class="show-desktop hide-mobile" id="nav">
                     <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
-                    <li><a href="http://www.uflcindia.org/">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="work.html">Our Work</a></li>
                     <li><a href="about.html">About us</a></li>
                     <li><a href="involved.html">Get Involved</a></li>
@@ -46,9 +49,9 @@
     <div class="work-container">
         <div class="container">
             <div class="row">
-                <h1>Our Work</h1>
-                <p>UFLC is open for new ideas & projects and is determined in driving this movement to a larger scale.</p>
-                <ul class="row">
+                <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Our Work</h1>
+                <p data-aos="fade-up" data-aos-easing="ease" data-aos-delay="600">UFLC is open for new ideas & projects and is determined in driving this movement to a larger scale.</p>
+                <ul class="row" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="900">
                     <li class="col-lg-3 col-md-3 col-12">
                         <div class="zoom"><img src="images/work1.JPG" alt="features-1"></div>
                         <div class="heading">
@@ -72,7 +75,7 @@
                     </li>
                 </ul>
 
-                <ul>
+                <ul data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
                     <li>
                         <div class="zoom"><img src="images/work4.jpg" alt="features-1"></div>
                         <div class="heading">
@@ -96,7 +99,7 @@
                     </li>
                 </ul>
 
-                <ul>
+                <ul data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
                     <li>
                         <div class="zoom"><img src="images/work7.jpg" alt="features-1"></div>
                         <div class="heading">
@@ -113,20 +116,23 @@
 
 
 
-    <footer>
-        <div class="footer-container">
-            <div class="container">
-                <h3>United Front of Liberal Community</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
+    <div class="end">
+        <footer>
+            <div class="footer-container">
+                <div class="container">
+                    <h3>United Front of Liberal Community</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Copyright @ 2020 All Rights Reserved.</a></li>
+                        <!-- <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li> -->
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script>
-    
+        AOS.init();
         var menu = document.getElementById('menu');
         var nav = document.getElementById('nav');
         var exit = document.getElementById('exit');

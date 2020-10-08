@@ -16,6 +16,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="uflc pune ngo">
     <title>UFLC | ABOUT | Get to Know us</title>
+    <!-- //AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="styles/about.css"> 
 </head>
 <body>
@@ -40,10 +43,10 @@
     
         <section>
             <div class="landing">
-                <div class="illustration">
+                <div class="illustration" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
                     <img src="images/fade.png" alt="graphic" class="server">
                 </div>  
-                <div class="title">
+                <div class="title" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
                     <h1>About UFLC</h1>
                     <p class="para">On 1st July, 2018 students from various colleges across Pune came 
                         together to form UFLC. It evolved to be a common platform for youth ignited with
@@ -52,7 +55,8 @@
                 </div>  
             </div>
             
-            <p class="para">We have conducted more than 25 social events and projects within a 
+            <p class="para" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+                We have conducted more than 25 social events and projects within a 
                 span of 15 months either individually or through collaborations. UFLC is open 
                 to all kinds of collaborations for social benefit. We have also worked together
                  with various colleges across Pune. Currently we are active in various spheres of
@@ -60,10 +64,10 @@
                   projects and is determined in driving this movement to a larger scale. </p>
 
             <div class="landing">
-                <div class="illustration2">
+                <div class="illustration2" data-aos="fade-up-left" data-aos-easing="ease" data-aos-delay="800">
                     <img src="images/planting.png" alt="graphic" class="server">
                 </div>  
-                <div class="title">
+                <div class="title" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
             <h1>Our Mission</h1>
             <h3>We Aim To</h3>
                     <p class="para2">Developing a responsible and vigilant society for countering social 
@@ -82,20 +86,23 @@
         
     </div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="container">
-                <h3>United Front of Liberal Community</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
+    <div class="end">
+        <footer>
+            <div class="footer-container">
+                <div class="container">
+                    <h3>United Front of Liberal Community</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Copyright @ 2020 All Rights Reserved.</a></li>
+                        <!-- <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li> -->
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script>
-    
+        AOS.init();
         var menu = document.getElementById('menu');
         var nav = document.getElementById('nav');
         var exit = document.getElementById('exit');

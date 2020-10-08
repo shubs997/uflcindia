@@ -27,7 +27,16 @@ ul {
 }
 
 .hide-mobile {
-    display: none;
+    /* display: none; */
+    right: -60vw;
+    /* visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear; */
+}
+
+.show-mobile {
+    /* display: none; */
+    opacity: 1;
 }
 header {
     display: flex;
@@ -45,6 +54,12 @@ header {
     margin: 2em auto 2em;
 }
 
+.bezier {
+    width: 31%;
+    margin-left: -25%;
+    float: left;
+}
+
 h1, .subhead {
     position: relative;
     z-index: 3;
@@ -52,6 +67,28 @@ h1, .subhead {
 
 .subhead {
     font-size: 1.1em;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-img img{
+    width: 40px;
+}
+
+.social-img img:hover {
+    box-shadow: 10px 10px 100px #ccc;
+}
+
+.social-img-fb img{
+    width: 40px;
+    padding: 1em 1em 0;
+    margin-bottom: -2.5px;
+}
+
+.social-img-fb img:hover {
+    box-shadow: 10px 10px 100px #ccc;
 }
 
 .para {
@@ -125,12 +162,17 @@ h1, .subhead {
 }
 
 .blue-container img {
-    width: 14%;
+    width: 16%;
 }
 
 .blue-container ul li:nth-child(3) img {
-    width: 8%;
+    width: 20%;
 }
+
+.blue-container ul li:nth-child(5) img {
+    width: 12%;
+}
+
 
 .gray-container {
     background: #F6F6F6;
@@ -266,6 +308,7 @@ ul.footer-links li {
 ul.footer-links li a {
     color: #9D9D9D;
     font-size: .8em;
+    text-decoration: none;
 }
 
 nav ul {
@@ -278,6 +321,8 @@ nav ul {
     height: 100%;
     z-index: 7;
     padding-top: 3em;
+    right: 0vw;
+    transition: all .5s ease-in-out;
 }
 
 nav ul li a {
@@ -286,12 +331,18 @@ nav ul li a {
     display: block;
     width: 100%;
     padding: 1em 2em;
-    background-color: #00A6D1;;
+    background-color:rgb(49, 55, 59);;
 }
 
 nav ul li a:hover{
-    background-color: rgb(54, 178, 255);
+    background-color: #00657e;
     text-decoration: none;
+}
+
+.end {
+    transform: skewY(0deg);
+    padding-bottom: 28px;
+    background: linear-gradient(to bottom, transparent 0%, #3d444a 70%);
 }
 
 .exit-btn {
@@ -311,6 +362,9 @@ nav ul li a:hover{
 
 
 
+
+
+/***************** MEDIA QUERIES ********************/
 
 
 
@@ -336,7 +390,7 @@ nav ul li a:hover{
     .subhead {
         font-size: 1.3em;
         font-weight: 500;
-        margin-bottom: 12%;
+        /* margin-bottom: 12%; */
     }
     .work-container .heading {
         display: flex; 
@@ -353,6 +407,14 @@ nav ul li a:hover{
         float: left;
         border-radius: 10px;
         box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.1);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .work-container ul li:hover{
+        box-shadow: 20px 30px 54px 0px rgba(0,0,0,0.1);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 
     .work-container ul li img {
@@ -411,6 +473,31 @@ nav ul li a:hover{
     .title{
         margin: 150px auto 0px;
     }
+    
+    .social-icons {
+        text-align: center;
+    }
+
+    .social-img img{
+        width: 40px;
+        padding: 1em 1em 0;
+    }
+
+    .social-img img:hover {
+        box-shadow: 10px 10px 100px #ccc;
+    }
+
+    .social-img-fb img{
+        width: 40px;
+        padding: 1em 1em 0;
+        margin-bottom: -2.5px;
+    }
+
+    .social-img-fb img:hover {
+        box-shadow: 10px 10px 100px #ccc;
+    }
+
+    
     .landing{
         display: flex;
     }
@@ -420,7 +507,7 @@ nav ul li a:hover{
         margin: -50;
     }
     .subhead {
-        margin-bottom: 15%;
+        /* margin-bottom: 15%; */
     }
 
     .blue-container ul {
@@ -437,9 +524,10 @@ nav ul li a:hover{
         max-width: 100px;
         margin: 60px 10px 80px 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: margin .5s ease;
     }
     .blue-container ul li:hover {
-        top: -10;
+        margin-top: 2em;
     }
 
     .gray-container ul {
@@ -462,7 +550,9 @@ nav ul li a:hover{
     .blue-container ul li:nth-child(even) {
         margin-top: -130px;
     }
-
+    .blue-container ul li:nth-child(even):hover {
+        margin-top: -160px;
+    }
     .show-desktop {
         transition: all 0.3s ease;
         display: block;
@@ -471,6 +561,7 @@ nav ul li a:hover{
 
     .hide-desktop {
         display: none;
+        transition: all 0.3s ease;
     }
 
     nav ul {
@@ -480,6 +571,7 @@ nav ul li a:hover{
         height: auto;
         display: flex;
         padding-top: 0;
+        transition: 0.5s;
     }
 
     nav ul li {
@@ -492,15 +584,24 @@ nav ul li a:hover{
         /* text-align: right; */
         padding: 1em 2em;
         font-weight: bold;
+        transition: all .2s ease-in-out;
     }
 
     nav ul li a:hover {
         background-color: inherit;
+        color: #00a6d1;
+    }
+    .blue-container ul li:nth-child(5) img {
+        width: 3em;
     }
 
     .scroll {
         width: 30px;
         animation: move 1s infinite alternate;
+    }
+
+    #scroll-icon {
+        margin-top: 5em;
     }
 
     @keyframes move {
@@ -517,8 +618,9 @@ nav ul li a:hover{
 @media only screen and (min-width: 1600px)  {
 
     .server {
-        width: 100%;
-        margin: 5em auto 4em 15%;
+        width: 150%;
+        margin: 0em 0 4em 11%;
+        display: inline-block;
     }
 
     .container {
@@ -541,7 +643,7 @@ nav ul li a:hover{
     }
 
     .blue-container ul li p, blockquote {
-        font-size: 1.3em;
+        /* font-size: 1.3em; */
     }
 
     .gray-container {
@@ -553,12 +655,21 @@ nav ul li a:hover{
     }
 
     .blue-container img {
-        width: 15%;
+        width: 65%;
     }
 
     .blue-container ul li:nth-child(3) img {
-        width: 8%;
+        width: 65%;
         margin-top: -4px;
+    }
+    .blue-container ul li:nth-child(5) img {
+        width: 3em;
+    }
+
+    .bezier {
+        width: 40%;
+        margin-left: -50.2%;
+        float: left;
     }
 
 }

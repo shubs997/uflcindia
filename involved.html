@@ -18,6 +18,9 @@
     <meta name="description" content="ngo in pune">
     <meta name="author" content="Shubham Jadhav">
     <title>UFLC | INVOLVED</title>
+    <!-- //AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/involved.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -48,7 +51,7 @@
     <div class="form-container">
         <div class="container">
             <h1>Become A Volunteer</h1>
-
+            <p id="para1">Submit your details below and we will let you know about any upcoming drives and events.</p>
 
             <!-- <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"></form>
                 <div class="form-group">
@@ -93,20 +96,23 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="container">
-                <h3>United Front of Liberal Community</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
+    <div class="end">
+        <footer>
+            <div class="footer-container">
+                <div class="container">
+                    <h3>United Front of Liberal Community</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Copyright @ 2020 All Rights Reserved.</a></li>
+                        <!-- <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li> -->
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script>
-    
+        AOS.init();
         var menu = document.getElementById('menu');
         var nav = document.getElementById('nav');
         var exit = document.getElementById('exit');
