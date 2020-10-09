@@ -333,6 +333,37 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+input[type=text]
+{
+  /* width: 100%; */
+  padding: 7px 10px;
+  border: 1.5px solid #383838;
+  border-radius: 0.3em;
+  /* margin: 8px 0; */
+  box-sizing: border-box;
+} 
+
+input[type=email]
+{
+  /* width: 100%; */
+  padding: 7px 10px;
+  border: 1.5px solid #383838;
+  border-radius: 0.3em;
+  /* margin: 8px 0; */
+  box-sizing: border-box;
+} 
+
+#send {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+#send:active {
+    background-color: transparent;
+    color: #17a2b8;
+}
+
+
 
 
 
