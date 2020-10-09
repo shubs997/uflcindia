@@ -603,6 +603,11 @@ input[type=email]
         padding-top: 2em;
     }
 
+    #send:hover {
+        background-color: transparent;
+        color: #17a2b8;
+    }
+
     @keyframes move {
         from {
             transform: translateY(0px);
